@@ -5,20 +5,18 @@ Vue.use(MintUI);
 import '../lib/mui/css/mui.min.css';
 import '../lib/mui/css/icons-extra.css';
 // 配置路由
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
 // 导入路由对象
-import router from './router.js'
-//导入根组件
-// import App from './components/App.vue'
-// const vm = new Vue({
-//   el: '#app',
-//   render:function(createElements){
-//     return createElements(App)
-//    },
-//    router
-// })
-import App from './components/App.vue'
+import router from './router.js';
+
+// 配置 axios
+import axios from 'axios';
+Vue.prototype.$http = axios.create({
+  baseURL: 'http://39.106.32.91:3000/'
+})
+
+import App from './components/App.vue';
 
 const vm = new Vue({
   el: '#app',
