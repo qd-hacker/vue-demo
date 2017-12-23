@@ -34,7 +34,11 @@
 <style lang="less" scoped>
 .mui-media-body{
       h1{
-         font-size:16px;
+          width:100%;
+         font-size:14px;
+         overflow:hidden;
+         white-space:nowrap;
+         text-overflow:ellipsis ;
       }
       p{
         color:skyblue;

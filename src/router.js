@@ -6,7 +6,8 @@ import MemberContainer from './components/tabbars/MemberContainer.vue';
 import ShopcarContainer from './components/tabbars/ShopcarContainer.vue';
 import SearchContainer from './components/tabbars/SearchContainer.vue';
 import NewsList from './components/news/NewsList.vue';
-// import Newsinfo from './components/news/Newsinfor.vue';
+import Newsinfo from './components/news/Newsinfo.vue';
+import phtot from './components/phtots/phtot.vue'
 const router = new VueRouter({
     routes:[
         {path:'/',redirect:'/home'},
@@ -15,7 +16,8 @@ const router = new VueRouter({
         {path:'/shop',component:ShopcarContainer},
         {path:'/search',component:SearchContainer},
         {path:'/home/NewsList',component:NewsList},
-        // {path:'/home/newsinfo/:id',component:Newsinfo}
+        {path:'/home/newsinfo/:id',component:Newsinfo,props:true},
+        {path:'/home/phtot',component:phtot}
     ],
     linkActiveClass: 'mui-active'
 })

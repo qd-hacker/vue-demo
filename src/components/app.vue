@@ -35,10 +35,11 @@
 </script>
 
 <style lang="less" scoped>
+.mint-header{
+	z-index: 9999;
+}
 .app-count{
 	overflow: hidden;
-	text-overflow:ellipsis;
-  white-space: nowrap;
 	padding-top:60px; 
 	padding-bottom:50px; 
 }
